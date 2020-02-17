@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "midi", "midi.vcxproj", "{ACF16E45-B2BD-462D-9B04-4D0430FED7FD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+		Testing|x64 = Testing|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACF16E45-B2BD-462D-9B04-4D0430FED7FD}.Debug|x64.ActiveCfg = Debug|x64
+		{ACF16E45-B2BD-462D-9B04-4D0430FED7FD}.Debug|x64.Build.0 = Debug|x64
+		{ACF16E45-B2BD-462D-9B04-4D0430FED7FD}.Release|x64.ActiveCfg = Release|x64
+		{ACF16E45-B2BD-462D-9B04-4D0430FED7FD}.Release|x64.Build.0 = Release|x64
+		{ACF16E45-B2BD-462D-9B04-4D0430FED7FD}.Testing|x64.ActiveCfg = Testing|x64
+		{ACF16E45-B2BD-462D-9B04-4D0430FED7FD}.Testing|x64.Build.0 = Testing|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10521D09-6CF1-40F8-8CD0-8912A9144FF8}
+	EndGlobalSection
+EndGlobal
