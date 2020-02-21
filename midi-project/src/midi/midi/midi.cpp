@@ -8,13 +8,13 @@ namespace midi {
 		io::read_to(in, head);
 		io::switch_endianness(&head->size);
 	}
-	//void read_mthd(std::istream& in, MTHD* methhead) {
-	//	io::read_to(in, methhead);
-	//	io::switch_endianness(&methhead->type);
-	//	io::switch_endianness(&methhead->ntracks);
-	//	io::switch_endianness(&methhead->division);
-	//	io::switch_endianness(&methhead->header.size);
-	//}
+	void read_mthd(std::istream& in, MTHD* methhead) {
+		io::read_to(in, methhead);
+		io::switch_endianness(&methhead->type);
+		io::switch_endianness(&methhead->ntracks);
+		io::switch_endianness(&methhead->division);
+		io::switch_endianness(&methhead->header.size);
+	}
 	std::string header_id(CHUNK_HEADER head) {
 		std::string res = "";
 		for (char c : head.id) {

@@ -18,16 +18,16 @@ namespace midi {
 	void read_chunk_header(std::istream&, CHUNK_HEADER*);
 	std::string header_id(CHUNK_HEADER);
 
-//#pragma pack(push, 1)
-//	struct MTHD {
-//	public:
-//		CHUNK_HEADER header;
-//		uint16_t type;
-//		uint16_t ntracks;
-//		uint16_t division;
-//	};
-//#pragma pack(pop)
-//	void read_mthd(std::istream&, MTHD*);
+#pragma pack(push, 1)
+	struct MTHD {
+	public:
+		CHUNK_HEADER header;
+		uint16_t type;
+		uint16_t ntracks;
+		uint16_t division;
+	};
+#pragma pack(pop)
+	void read_mthd(std::istream&, MTHD*);
 //
 //	bool is_sysex_event(uint8_t);
 //	bool is_meta_event(uint8_t);
